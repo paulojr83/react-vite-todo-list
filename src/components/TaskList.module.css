@@ -1,0 +1,136 @@
+.taskList {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 87.5%;
+    }
+    .wrapper {
+        width: 100%;
+    }
+}
+
+.wrapper {
+    width: 60%;
+}
+
+.taskCount {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem 0 3rem 0 ;
+}
+
+.newTask {
+    font-weight: bold;
+    color: var(--blue);
+}
+
+.newTask span {
+    background: var(--gray-400);
+    color: var(--white);
+    border-radius: 45%;
+    margin: 0 .5rem 0 .5rem;
+    padding: 0 .5rem 0 .5rem;
+}
+
+.taskDone {
+    font-weight: bold;
+    color: var(--purple);
+}
+.taskDone span {
+    background: var(--gray-400);
+    color: var(--white);
+    border-radius: 40%; 
+    margin: 0 .5rem 0 .5rem;
+    padding: 0 .5rem 0 .5rem;
+}
+
+.withOutTask {
+    min-height: 287px;
+    text-align: center;
+    border-top: .5px solid var(--gray-100);
+    border-radius: 8px;
+    color: var(--gray-300);
+}
+.withOutTaskContent {
+    padding-top: 3rem;
+}
+
+.withOutTaskContent svg {
+    margin-bottom: 1rem;
+}
+
+.taskListBox {
+    background: var(--gray-400);
+    padding: 1rem;
+    min-height: 3.5rem;
+    border-radius: 8px;
+
+    margin-bottom: 1rem;
+}
+
+.taskListBox p{
+    text-align: justify;
+    margin-top: calc(0px - 1rem);
+    padding-right: 2.5rem;
+    padding-left: 2rem;
+}
+
+.taskListBox p[data-check="true"]{
+    text-decoration: line-through;
+}
+
+.taskListBox button{
+    background: transparent;
+    border: 0;
+    color: var(--gray-100);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    line-height: 0;
+    border-radius: 2px;
+}
+
+.taskListBox button[name="delete"]:hover {
+    color: var(--red-500);
+}
+
+.taskListBox button[name="check"]:hover {
+    color: var(--gray-200);
+}
+
+.taskListBox header {
+    display: flex;
+    justify-content: space-between;  
+}
+
+.taskListBox  input[type="checkbox"] {
+    display: none;
+}
+
+.taskCheck {
+    width: 1.125rem;
+    height: 1.125rem;
+    background: var(--gray-400);
+    border: 2px solid var(--dark-blue);
+    color: var(--gray-400);
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.taskCheck:hover {
+    border: 2px solid var(--blue);
+}
+
+.taskChecked  {
+    width: 1.125rem;
+    height: 1.125rem; 
+    background: var(--purple) ;
+    cursor: pointer;
+    border-radius: 50%;
+}
+

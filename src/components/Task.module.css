@@ -1,0 +1,64 @@
+.task {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: calc(0px - 1.5rem - 6px);
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 87.5%;
+    }
+    .task {
+        width: 100%;
+    }
+}
+
+.taskForm {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+}
+
+.taskForm input[type="text"] {
+    height: 3.375rem;
+    margin-right: 8px;
+    width: 100%;
+    border: 1px solid var(--gray-700);
+    background: var(--gray-500);
+    border-radius: 8px;
+    color: var(--gray-300);
+    
+    line-height: 1.4;
+    padding: 1rem;
+}
+
+.taskForm > button {
+    border-radius: 8px;
+    border: 0;
+    background: var(--blue);
+    color: var(--white);
+    font-weight: bold;
+    cursor: pointer; 
+    font-size: 0.875rem;
+    width: 90px;
+    text-align: center;
+    margin: 0 auto;
+  text-align: center;
+    
+    transition: background-color 0.1s;   
+}
+
+.taskForm > button[type=submit]:not(:disabled):hover {
+    background: var(--dark-blue);
+}
+
+.taskForm button:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+ 
+.taskForm button svg {
+    margin-right: 0.125rem;
+    margin-top: 0.125rem;
+}
